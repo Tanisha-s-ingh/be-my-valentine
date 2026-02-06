@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine? 💖</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Floating Bows -->
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+  <div class="bow">🎀</div>
+
+  <div class="wrapper">
+    <div class="container">
+      <!-- MAIN IMAGE (changes via JS) -->
+      <img src="assets/teddy.png" id="mainGif" alt="Teddy bear">
+
+      <h1 id="question">Will you be my Valentine? 💖</h1>
+
+      <div class="buttons">
+        <button id="yesBtn">YES 💕</button>
+        <button id="noBtn">NO 🙃</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden">
+    <img src="assets/happy.gif" width="120" alt="Happy animation">
+    <h2>Did you have a change of mind? 🥺💗</h2>
+
+    <div class="popup-buttons">
+      <button id="popupYes">YES 💘</button>
+      <button id="popupNo">NO 😐</button>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="sadMusic" src="assets/sad.mp3"></audio>
+  <audio id="happyMusic" src="assets/happy.mp3"></audio>
+  <audio id="popSound" src="assets/pop.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e0, #ffeaf0);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* CENTER WRAPPER */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CARD */
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* IMAGE */
+#mainGif {
+  width: 220px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* QUESTION */
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* YES */
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#yesBtn:hover {
+  background: #ff3355;
+}
+
+/* NO */
+#noBtn {
+  background: #ddd;
+  color: #333;
+}
+
+#noBtn:hover {
+  background: #ccc;
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  z-index: 999;
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup img {
+  margin-bottom: 20px;
+}
+
+.popup h2 {
+  color: #ff4d6d;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.popup button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.popup button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* POPUP BUTTONS */
+#popupYes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#popupYes:hover {
+  background: #ff3355;
+}
+
+#popupNo {
+  background: #ddd;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+#popupNo:hover {
+  background: #ccc;
+}
+
+/* HIDE */
+.hidden {
+  display: none;
+}
+
+/* 🎀 FLOATING BOWS 🎀 */
+.bow {
+  position: fixed;
+  font-size: 30px;
+  animation: floatUp 10s linear infinite;
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* DIFFERENT POSITIONS & DELAYS */
+.bow:nth-child(1)  { left: 5%;  animation-delay: 0s; }
+.bow:nth-child(2)  { left: 15%; animation-delay: 1s; }
+.bow:nth-child(3)  { left: 25%; animation-delay: 2s; }
+.bow:nth-child(4)  { left: 35%; animation-delay: 3s; }
+.bow:nth-child(5)  { left: 45%; animation-delay: 4s; }
+.bow:nth-child(6)  { left: 55%; animation-delay: 5s; }
+.bow:nth-child(7)  { left: 65%; animation-delay: 6s; }
+.bow:nth-child(8)  { left: 75%; animation-delay: 7s; }
+.bow:nth-child(9)  { left: 85%; animation-delay: 8s; }
+.bow:nth-child(10) { left: 95%; animation-delay: 9s; }
+
+/* BOW ANIMATION */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120px) rotate(360deg) scale(1.2);
+    opacity: 0;
+  }
+}
